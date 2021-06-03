@@ -7,7 +7,21 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Juego de sopa de letras</h1>
+      <p> A B C D E F G H I J K L M N O P Q R S T U V W</p>
+      <form> 
+        <label for= "number"> Número de posiciones a rotar</label>
+        <input type="text" id="number" placeholder =" Escriba un número" name= "numeros"/> 
+        </br>
+        <label for="code"> Elija que acción realizar</label>
+        </br>
+      </br>
+        <textarea id="mensaje1" cols="20" row="5" placeholder="Escriba su respuesta"></textarea>
+        <textarea id="mensaje2" cols="20" row="5" placeholder="Sus resultados"></textarea>
+        </br>
+        <button class="checkBtn"> Enviar</button>
+      </form>
+
     </div>
     <script src="index.js" type="module"></script>
   </body>

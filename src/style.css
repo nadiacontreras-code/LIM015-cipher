@@ -1,0 +1,9 @@
+textarea {
+ resize: none;
+ min-height: 100px;
+ max-height: none;
+}
+
+#checkBtn {
+ background-color: rgb(224, 229, 230);
+}
