@@ -7,21 +7,25 @@
   </head>
   <body>
     <div id="root">
+    <header>
       <h1>Juego de sopa de letras</h1>
-      <p> A B C D E F G H I J K L M N O P Q R S T U V W</p>
-      <form> 
+      <!-- Bienvenia a la Pagina-->
+    </header>
+      <h2> A B C D E F G H I J K L M N O P Q R S T U V W</h2>
+      <!--Sección de formulario-->
+    <section>
+      <form>
         <label for= "number"> Número de posiciones a rotar</label>
-        <input type="text" id="number" placeholder =" Escriba un número" name= "numeros"/> 
+        <input type="number" id="number" placeholder =" Escriba un número" name= "numeros"/>
         </br>
         <label for="code"> Elija que acción realizar</label>
         </br>
-      </br>
-        <textarea id="mensaje1" cols="20" row="20" placeholder="Escriba su respuesta"></textarea>
-        <textarea id="mensaje2" cols="20" row="20" placeholder="Sus resultados" ></textarea>
         </br>
+          <textarea id="mensaje1" cols="20" row="20" placeholder="Escriba su respuesta"></textarea>
+          <textarea id="mensaje2" cols="20" row="20" placeholder="Sus resultados" ></textarea>
+    </section>
         <button type="button" id="send"> Cifrar</button>
       </form>
-
     </div>
     <script src="index.js" type="module"></script>
   </body>
