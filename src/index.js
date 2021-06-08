@@ -2,31 +2,22 @@ import cipher from './cipher.js';
 
 console.log(cipher);
 
-// Guardando contenido de box1 //
-function getMessage () {
-    let mensaje1 = document.getElementById('mensaje1').value;
-  }
-  // Creando la variable para el evento click//
+// Creando la variable para el evento click//
   let checkBtn = document.getElementById('send');
-  
-  // USando el EventListener //
-  
-   /* checkBtn.addEventListener('click', getBox1);
-    function getBox1 () {
-    console.log(document.getElementById('mensaje1').value);*/
-  
-  checkBtn.addEventListener('click', ()=> {
-    let mensaje1 = document.getElementById('mensaje1').value;
-    //alert("Probando"); -probando funcionalidad del botón
-    //console.log(document.getElementById('mensaje1').value);
-   console.log(mensaje1);
-    
+
+// Capturando el contenido de box1 y pasando a box2 //
+checkBtn.addEventListener('click', getBox1);
+
+function getBox1 () {
+  // capturando box1 en la consola con el click//
+  let box1 = document.getElementById('box1').value;
+  //console.log(document.getElementById('box1').value);
+  console.log(box1);
+
   // Moviendo de box1 to box 2 //
-  
-  // Creando un nuevo elemento y guardandolo en una variable//
-  
-  let texto2 = document.getElementById('mensaje2');
-  //Creando el texto //
-  texto2.textContent = mensaje1
-});
-  //texto2.appendChild(box2);
+  // Capturando el contenido de mensaje2 y guardandolo en una variable//
+  let texto2 = document.getElementById('box2');
+  //Creando el texto para el box2 //
+  //texto2.textContent = box1
+  texto2.innerHTML = box1
+};
