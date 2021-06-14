@@ -1,9 +1,16 @@
-body{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+h1{
+  color:#0C2190;
+  font-family:'Londrina Shadow', cursive;
+  font-size: 100px;
+  
+  background: #F48F31;
+  width: 800px;
+  height: 130px;
+  
+  
 }
 
-h1 {
+h2 {
   font-size: 50px;
 }
 #box1 {
