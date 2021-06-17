@@ -12,7 +12,7 @@ function getEncode () {
   let box1 = document.getElementById('box1').value;
        //console.log(box1);
   // Moviendo de box1 to box 2 :Capturando el contenido de box2 y declarandolo en una variable//
-      let texto2 =document.getElementById('box2');
+      //let texto2 =document.getElementById('box2');
   //Creando el texto para el box2 /
       //texto2.textContent = box1
       //let box2 = texto2.innerHTML = box1
@@ -29,7 +29,6 @@ function getEncode () {
       //console.log(textAscii);
         let newText = ((textAscii - 65 + parseInt(number)) % 26 + 65);
         console.log(newText);
-
         resultado += String.fromCharCode(parseInt(newText));
         console.log(resultado);
         texto2.innerHTML = resultado
@@ -49,8 +48,8 @@ let checkBtn2 = document.getElementById('receive');
 checkBtn2.addEventListener('click', getDecode);
 
 function getDecode () {
-let box3 = document.getElementById('box1').value;
- //console.log(box3);
- cipher.decode(box3);
+let box1 = document.getElementById('box1').value;
+ //console.log(box1);
+ cipher.decode(box1);
 
 };
