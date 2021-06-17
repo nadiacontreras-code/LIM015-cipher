@@ -1,10 +1,30 @@
 const cipher = {
-A:65,B:66,C:67,D:68,E:69,F:70,G:71,H:72,I:73,J:74,K:75,L:76,M:77,
-N:78,O:79,P:80,Q:81,R:82,S:83,T:84,U:85,V:86,W:87,X:88,Y:89,Z:90
-};
+    encode : function (string) {
+      let resultado = "";
+      for (let i = 0; i < string.length; i++) {
+        let text = string[i]
+        
+        let textAscii = string[i].charCodeAt();
+        if (textAscii >= 65 && textAscii <= 90) {
+          //console.log(textAscii);
+          let newText = ((textAscii - 65 + parseInt(number)) % 26 + 65);
+          console.log(newText);
+  
+          resultado += String.fromCharCode(parseInt(newText));
+          console.log(resultado);
+          texto2.innerHTML = resultado
+        }
+        if (string[i] === " ") {
+           resultado += " ";
+        }
+        //resultado += string[i];
+  
+      }
+  
+      
+  return string;
+    },
 
-let number = document.getElementById('number').value;
-    console.log(number);
+}
+console.log(cipher.encode(box1));
 export default cipher;
-
-
