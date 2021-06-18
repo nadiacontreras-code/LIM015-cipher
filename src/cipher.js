@@ -2,6 +2,7 @@
   // propiedad encode, valor function string//
     encode: function  (string) {
       //declaramos las variables locales usadas en esta function//
+      let box1 = document.getElementById('box1').value;
       let texto2 = document.getElementById('box2');
       let number = document.getElementById('number').value;
       //declaramos la variable que recibira el texto codoficado//
@@ -30,6 +31,7 @@
     return box1;
     },
   decode: function (string2){
+    let box1 = document.getElementById("box1");
     let texto2 = document.getElementById('box2');
     let number = document.getElementById('number').value;
     let resultado = "";
@@ -40,10 +42,10 @@
       console.log (textAscii);
       if(textAscii>=65 && textAscii <=90){
         // obtenemos la posición(número) descifrada//
-          let newAscii = ((textAscii -65 - parseInt(number))% 26 + 65);
+          let newAscii =(parseInt((textAscii + 65 - parseInt(number)))% 26 )+ 65;
           console.log(newAscii);
           // obteniendo la letra que corresponde a la posición descifrada(newAscii) y adjuntando a resultado//
-            resultado += String.fromCharCode(newAscii);
+            resultado += String.fromCharCode(parseInt(newAscii));
             console.log(resultado);
             //Ingresando el texto descifrado en el box2//
              texto2.innerHTML = resultado
@@ -51,6 +53,7 @@
            resultado += " "
            }
      }
+    //return resultado;
     return box1;
   }
 

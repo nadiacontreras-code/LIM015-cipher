@@ -41,7 +41,6 @@ function getEncode () {
   }
 cifrar(box1);*/
 };
-
 // Declarando la variable para el evento decifrar//
 let checkBtn2 = document.getElementById('receive');
 // capturando el contenido de box1 para decifrar //
@@ -51,5 +50,15 @@ function getDecode () {
 let box1 = document.getElementById('box1').value;
  //console.log(box1);
  cipher.decode(box1);
+}
+ // Declarando la variable para el evento limpiar//
+let checkBtn3 = document.getElementById('clean');
+checkBtn3.addEventListener('click', getClean);
+function getClean(){
+   //let box1 = document.getElementById('box1').value;
+   //let box2 = document.getElementById('box2').value;
+    
+   
 
-};
+} 
+
