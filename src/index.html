@@ -26,19 +26,19 @@
       <main><link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <label for="number" class="choose" > Número de posiciones a rotar</label>
-        <input type="number" id="number" placeholder =" Escriba un número" name= "numeros"/>
+        <input type="number" id="offset" placeholder =" Escriba un número" name= "numeros"/>
         </br>
         <label for="code" class="write" >Ingrese texto</label>
         </br>
         </br>
 <!--Sección de Cajas de texto-->
-          <textarea id="box1" text-transform="uppercase" cols="20" row="20" placeholder="Escriba su respuesta"
+          <textarea id="box1" class="uppercase" cols="20" row="20" placeholder="Escriba su respuesta"
           ></textarea>
           <textarea id="box2" cols="20" row="20" placeholder="Sus resultados" maxlength="0" ></textarea>
         </br>
 <!--Botón-->
-        <button type="button" id="send"> Cifrar</button>
-        <button type="button" id="receive"> Decifrar</button>
+        <button type="button" id="encode"> Cifrar</button>
+        <button type="button" id="decode"> Decode</Decifrar</button>
         <button type="reset" id="clean"> limpiar</button>
     </form>
   </main>
