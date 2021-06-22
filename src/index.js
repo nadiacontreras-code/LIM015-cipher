@@ -1,15 +1,16 @@
 
   import cipher from './cipher.js'; 
   
-// Declarando la variable para el evento click de cifrar//
+ // Declarando la variable para el evento click de cifrar//
   let checkBtn1 = document.getElementById('encode');
-  
-// Capturando el contenido de box1 para cifrar en la consola //
+  // Capturando el contenido de box1 para cifrar en la consola //
 checkBtn1.addEventListener('click', getEncode);
 
 function getEncode () {
       // Delcarando variables a usar//
-      let box1 = document.getElementById('box1').value;
+      let texto = document.getElementById('box1').value;
+      let box1 = texto.toUpperCase();
+      //console.log(box1);
       let box2 = document.getElementById('box2');
       let offset = document.getElementById('desplazamiento').value;
       // Moviendo de box1 to box 2 //
@@ -21,17 +22,19 @@ function getEncode () {
         box2.innerHTML = resultado
 }
 
-
 // Declarando la variable para el evento decifrar//
 let checkBtn2 = document.getElementById('decode');
 // capturando el contenido de box1 para decifrar //
 checkBtn2.addEventListener('click', getDecode);
 
 function getDecode () {
-let box1 = document.getElementById('box1').value;
-let number = document.getElementById('offset');
- //console.log(box1);
- cipher.decode(box1, number);
+        let box1 =document.getElementById('box1').value;
+        let offset = document.getElementById('desplazamiento').value;
+        //console.log(box1);
+        let box2 = document.getElementById('box2');
+        let resultado =  cipher.decode(box1, offset);
+        //Ingresando contenido a box2//
+        box2.innerHTML = resultado
 }
  // Declarando la variable para el evento limpiar//
 /*let checkBtn3 = document.getElementById('clean');
