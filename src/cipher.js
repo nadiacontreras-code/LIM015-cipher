@@ -2,12 +2,14 @@
 const cipher = {
     encode: function (box1, offset) { // elparametro offset no me funciona como argumento ( en vez de number)//
           let cifrado = "";
+
         if (box1=== 0 || box1 === null){
         throw new (TypeError)
         }
         if (offset=== 0 || offset === null){
           throw new (TypeError)
-          }
+        }
+
           //Creamos una iteracion for que recorrera cada letra de nuestro string//
             for (let i = 0; i < box1.length; i++) {
 
