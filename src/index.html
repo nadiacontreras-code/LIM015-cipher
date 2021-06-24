@@ -13,31 +13,28 @@
   </header>
   <!--Sección del titulo del juego-->
   <main>
-      <div class="game-description" >
-          <h1><link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+          <h1 class="title-game"><link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
               Juego de letras</h1>
-          <h2><!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
-          <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+          <h2 class="subtitle-game"> <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
               A  C  E  G  I  K  M  O  Q  S  U  W X Z</h2>
-          <h2> B  D  F  H  J  L  N  P  R  T  V Y</h2>
-          
-      </div>
+          <h2 class="subtitle-game"> B  D  F  H  J  L  N  P  R  T  V Y</h2>
+
 <!--Sección de formulario-->
-     <form>
+    <form>
       <div class="game-option" >
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
           <label for="number" class="number" > Número de posiciones a rotar</label>
           <input type="number" id="desplazamiento" placeholder =" Escriba un número" name= "numeros"/>
-          
+
           <p>Ingrese texto</p>
-          
+
       </div>
 <!--Sección de Cajas de texto-->
-      <div class= "boxes" >
+      <div class= "content-boxes" >
           <textarea id="box1" class="box-size" cols="20" row="20" placeholder="Escriba su respuesta"></textarea>
           <textarea id="box2" class="box-size" cols="20" row="20" placeholder="Sus resultados" maxlength="0" ></textarea>
-        
       </div>
 <!--Botón-->
       <div class="buttons">
@@ -46,10 +43,13 @@
         <button type="reset" id="clean"> limpiar</button>
       </div>
     </form>
+    <br>
   </main>
-  </div>
-  <footer>
-  </footer>
+    
+</div>
+<footer>
+  <p id=" texto-footer"> Todos los derechos reservados</p>
+</footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

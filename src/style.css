@@ -5,29 +5,31 @@ header{
   height:30px;
   text-align: center;
 }
-body{
-  background-color: #ffdab9;
-  /*background-image: url(https://pin.it/1FVfM2j)*/
-  ;
+
+body {
+  /*background-color: #ffdab9;*/
+  background-image: url(./Imagenes/Fondo-Hoja.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  /*background-position: 200px 300px;*/
 }
-main{
-  text-align: center;
-}
-/* estilo al diseño de "juego de letras" */
-h1{
+
+.title-game {
   color:#0C2190;
   font-family:'Londrina Shadow', cursive;
   font-size: 100px;
   background: #F48F31;
+  text-align: center;
   /*width: 800px;
   height: 130px;*/
 
 }
-/* estilo al ABCDario"*/
-h2 {
+.subtitle-game {
   color: #000000;
   font-family: 'Fredoka One', cursive;
-  font-size: 30px;
+  font-size: 40px;
+  text-align: center;
   /*float: left;*/
 }
 
@@ -36,27 +38,43 @@ h2 {
   font-size: 20px;
   color: #333533;
   font-family: 'Fredoka One', cursive;
+  text-align: center;
 }
 /* Estilo a las cajas de texto*/
 
-/*.boxes {
-  
-  
-}*/
+.content-boxes {
+  text-align: center;
+
+}
 .box-size{
   resize: none;
   min-height: 100px;
   max-height: none;
-  width: 200px;
+  width: 300px;
+  font-size: 20px;
 }
-/*.uppercase {
-  text-transform: uppercase;
-}*/
 .buttons {
+  text-align: center;
+}
+#encode {
+    background-color: rgb(224, 229, 230);
+    font-size: 15px;
+  
+}
+#decode {
   background-color: rgb(224, 229, 230);
+  font-size: 15px;
+
+}
+#clean {
+  background-color: rgb(224, 229, 230);
+  font-size: 15px;
+
 }
 
 footer{
   background-color:#aec3b0;
+  text-align: center;
   height: 20px;
+  
 }
